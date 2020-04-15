@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Road Trip by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+		<!-- Color for banner is here in main.css #header.alt -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Elyssa Collins: <span>Dashboard</span></a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Blogs</a></li>
+					<li><a href="elements.html">Dashboard</a></li>
+				</ul>
+			</nav>
+
+		<!-- Content -->
+		<!--
+			Note: To show a background image, set the "data-bg" attribute below
+			to the full filename of your image. This is used in each section to set
+			the background image.
+		-->
+			<section id="post" class="wrapper bg-img" data-bg="NLCD3.png">
+				<div class="inner">
+					<article class="box">
+						<header>
+							<h2>Dashboard</h2>
+							<p></p>
+						</header>
+						<div class="content">
+							<p>For my Geovisualization class at the Center for Geospatial Analytics at NCSU, I developed a Web GIS dashboard in order to visualize future
+								vulnerability to flooding. The dasboard shows multiple different maps and plots of simulations and spatial analysis that were derived using
+								the Future Urban and Regional Environment Simulation (FUTURES) and Height Above the Nearst Drainage (HAND) methodology of 4 HUC10 watersheds
+								near Wilmington, NC:
+							</p>
+
+							<p>
+								1) Map: Inundation simulations for September 13th, 2018 - September 17th, 2018, representing 1 day prior to and 4 days following the landfall of Hurricane
+								Florence
+							</p>
+							<p>
+								2) Map: FUTURES urbanization simulations for the years 2025, 2030, 2035, and 2038
+							</p>
+							<p>
+								3) Map: Change in urban vulerability to flooding between 2025 to 2038
+							</p>
+							<p>
+								4) Plot: km^2 of inundated developed land during each day of Hurricane Florence, visualized for each year of the FUTURES simulation
+							</p>
+							<p>
+								5) Plot: km^2 of inundated developed land during each year of the FUTURES simulation, visulized for different ranges of inundation levels
+							</p>
+							<p>
+								6) Plot: km^2 of projected developed land in the study area
+							</p>
+
+							<p>
+								For the Hurricane Florence inundation simulations, I used the National Water Model (NWM) integrated HAND
+								methodology. The NWM simulates observed and forecast streamflows (m^3/sec) for each stream reach in the National Hydrography Dataset in CONUS.
+								It simulates the water cycle and the effects of extreme variability in precipitation and produces hourly outputs. I obtained analysis and assimilation
+								product data for 12pm for each day between September 13 and  September 17, 2018, so inundation analyses represent inundation on 12pm of that day.
+								Hurricane Florence made landfall at 7:15 a.m. on Friday, September 14. HAND normalizes digital elevtion models according to distributed vertical
+								distances relative to the drainage channels (i.e., the "height" is 0 m if located in a river) and is used to simulate inundation based on a stage
+								height. Linear regressions are developed for each rating curve (discharge - stage height relations) for each stream reach and are used to convert
+								the NWM discharges to stage heights. Next, inundation is simulated along each stream segment based on the stage height, contributing area, and HAND,
+								with separate simulations for each day of Florence.
+							</p>
+
+							<p> For the FUTURES urbanization simulations, I simulated locations of development for the years 2025, 2030, 2035, and 2038. The FUTURES devlepment
+								 	simulations were coupled with the HAND inundation simulations in order to spatially analyze urban flood vulnerability. In the map, one can
+									select different years of the FUTURES simulation to visualize and spatially overlay the Hurricane Florence inundation maps to see which developed
+									lands would be affected for that year. Changing the FUTURES simulation year from say 2025 - 2038 would show that the amount of developed lands
+									affected by flooding increases with increasing development in certain areas. Basically, the map shows how increases in development that are likely
+									to occur in the future will be affected by a Hurricane Florence flooding scenario. The plots show more specific inundation details, in numbers of km^2 of
+									developed lands, for each year of the FUTURES simulation, as well as for different inundation levels (low, medium, and high). The change in urban
+									vulnerability to flooding map shows the change in the total m of inundation experienced throughout Hurricane Florence (each day summed) for developed locations
+									between 2025 and 2038, pinpointing future potential highly vulnerable urban areas. This signifies the purpose of this research and the dashboard: how
+									can we develop urban management plans with the goal to minimize flood risk? Future work will simulate FUTURES under various urban planning scenarios
+									(sprawl, infill, preventing development in the floodplain) and evaluate how flood risk changes based on the urban management scenario. Future flooding
+									scenarios will also be developed in order to understand flood risk under future hydrologic conditions/climate change. The current data displayed on
+									the dashboard is prototype data until more concrete/refined methods are developed to create new maps/plots.
+							</p>
+
+							<a class="p-2 text-muted" style="color:#45BAFF;" href="https://elyssac02.github.io/Future-Urban-Flood-Vulnerability-Dashboard/">Dashboard Link</a>
+
+						</div>
+						<footer>
+							<ul class="actions">
+								<!-- <li><a href="#" class="button alt icon fa-chevron-left"><span class="label">Previous</span></a></li>
+								<li><a href="#" class="button alt icon fa-chevron-right"><span class="label">Next</span></a></li> -->
+							</ul>
+						</footer>
+					</article>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Contact Me</h2>
+
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					</form>
+
+					<ul class="icons">
+						<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+					<div class="copyright">
+						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
