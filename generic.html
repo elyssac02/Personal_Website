@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Blogs</title>
+		<title>Bio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,8 +24,8 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Blogs</a></li>
-					<li><a href="elements.html">Dashboard</a></li>
+					<li><a href="generic.html">Bio</a></li>
+					<!-- <li><a href="elements.html">Dashboard</a></li> -->
 				</ul>
 			</nav>
 
@@ -35,9 +35,11 @@
 			to the full filename of your image. This is used in each section to set
 			the background image.
 		-->
-			<section id="post" class="wrapper bg-img" data-bg="mountains.jpg">
+			<!-- <section id="post" class="wrapper bg-img" data-bg="nlcd_back.png"> -->
+			<section id="post" class="wrapper bg-img" data-bg="flood1.png">
 				<div class="inner">
 					<article class="box">
+						<!-- <img src="/images/headshot.jpg" alt="headshot" style="width:125px;height:200px;"> -->
 						<header>
 							<h2>Bio</h2>
 							<p></p>
@@ -46,26 +48,35 @@
 							<p>My name is Elyssa Collins and I'm a Ph.D. Student in the Center for Geospaial Analytics at North Carolina State University. Before attending
 							NCSU, I graduated from the University of North Carolina at Chapel Hill with a B.S. in Geological Sciences.</p>
 
-							<p>At UNC Chapel Hill, I worked in various research labs with different disciplines, exposing me to the abundance of research that exists.
-							My first research experience was in the Increasing Diversity and Enhancing Academia REU program in which I studied the shell species, Glycymeris
+							<p>At UNC Chapel Hill, I worked in various research labs with different disciplines, exposing me to a wide variety of research.
+							My first research experience was with the Increasing Diversity and Enhancing Academia REU program in which I studied the shell species, Glycymeris
 							americana, to analyze how shell morphometrics, age, and chemical variations in this species are affected by certain environmental conditions,
 							such as seasurface temperatures. After realizing that I wanted my research to focus more on computer modeling and remote sensing/GIS, I joined the
 							Climate Health and Air Quality (CHAQ) lab in the Environmental Sciences and Engineering Department in the School of Public Health at UNC Chapel Hill.
-							In this lab, I collected observational and model output ground level ozone data to use the Bayesian Maximum Entropy (BME) method of spatial analysis to
-							krige global ozone concentrations. The map generated from this analysis was delivered to the Global Burden of Disease to implement a health
-							impact assessment. Lastly, I worked on a project in the Department's of Geography and Anthropology that analyzed MODIS NDVI and rainfall satellite
-							data in order to identify locations of vegetation greening and browning in Burkina Faso, West Africa. Through these experiences and classes that I
-							have taken at UNC and NCSU, I have gained proficient skills in GIS/remote sensing, as well as knowledge of various programming languages/softwares/
-							interfaces: R, Python, Google Earth Engine, GRASS GIS, ArcGIS, and Javascript/HTML/CSS (Web GIS: leaflet, Mapbox).</p>
+							In this lab, I collected observational and global atmospheric model outputs of surface ozone data to use the Bayesian Maximum Entropy (BME) data fusion
+							method to map yearly, high-resolution global surface ozone for 1990 - 2017. The maps generated from this analysis were delivered to the Global Burden of Disease
+							to implement a health impact assessment. Lastly, I worked on a project in the Department's of Geography and Anthropology to collect and analyze
+							MODIS satellite data to identify the spatial distribution and driving factors (e.g., climate) of vegetation greening and browning in Burkina Faso, West Africa.
+							Through these experiences and classes that I have taken at UNC and NCSU, I have gained proficient skills in GIS/remote sensing, as well as knowledge of various
+							programming languages/softwares/interfaces: R, Python, Google Earth Engine, GRASS GIS, ArcGIS, Javascript/HTML/CSS (Web GIS: leaflet, Mapbox), high
+							performance computing, etc.</p>
 
-							<p>At the Center for Geospatial Analytics (CGA), my advisor is Ross Meentemeyer. I'm currently assisting on a project that incorporates future climate
-								conditions into the Future Urban and Regional Environment Simulation (FUTURES), a model that projects spatially explicit urbanization patterns at
-								discrete time steps in the future. My dissertation will focus on projecting future flooding under climate change using the General Circulation Models
-								RCP 4.5 and 8.5 scenarios. The goal is inegrate the future flooding scenarios with FUTURES in order to simulate urbanization under future hydrologic
-								conditions. Ultimately, this will allow for identification of adaptation and management strategies that will minimize flood risk.
+							<p>At the Center for Geospatial Analytics (CGA), my advisor is Ross Meentemeyer. The images displayed on this website represent a small portion of the
+								work I've done or data I've collected while at CGA:</p>
+
+								<p>1) On the home page, the top map displays percent impervious surfaces in the Raleigh, North Carolina area (downloaded from the National Land Cover Database).</p>
+								<p>2) On the home page, the middle map shows one image of a series of images I created, in which I used a large dataset of reported flood records and a
+								tessellated grid in GIS software to map the spatiotemporal distribution of flood events.</p>
+								<p>3) On the home page, the bottom map was created by mosaicing different soil geodatabases to map the frequency of soil flooding.</p>
+								<p>4) On the bio page, the map shows some of my results that are in progress for predicting flood risk from geospatial datasets using machine learning.</p>
+
+							<p>	At CGA, I'm currently assisting on a project that incorporates future climate conditions into the Future Urban and Regional Environment Simulation (FUTURES), a model that simulates future, spatially-explicit urbanization patterns.
+								My dissertation will focus on modeling historical flood risk using machine learning, forecasting flood risk using inundation modeling, and forecasting
+								community displacement based on historical and future flood risk using spatiotemporal Bayesian methods. My research will begin to interpret the relationships
+								between community displacement and flood risk, which will allow for scenario-based exploration of climate adaptation strategies.
 							</p>
 
-							<a class="p-2 text-muted" style="color:#45BAFF;" href="CV.pdf">Curriculum Vitae</a>
+							<!-- <a class="p-2 text-muted" style="color:#45BAFF;" href="CV.pdf">Curriculum Vitae</a> -->
 						</div>
 						<footer>
 							<ul class="actions">
@@ -81,7 +92,7 @@
 			<footer id="footer">
 				<div class="inner">
 
-					<h2>Contact Me</h2>
+					<!-- <h2>Contact Me</h2>
 
 					<form action="#" method="post">
 
@@ -106,10 +117,10 @@
 						<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
-					</ul>
+					</ul> -->
 
 					<div class="copyright">
-						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>
 					</div>
 
 				</div>
